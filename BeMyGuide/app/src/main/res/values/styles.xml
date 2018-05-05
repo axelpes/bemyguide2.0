@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="AppTheme.Bar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary500</item>
+        <item name="colorPrimaryDark">@color/colorPrimary700</item>
+        <item name="colorAccent">@color/colorAccent400</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="AppTheme.NoBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary500</item>
+        <item name="colorPrimaryDark">@color/colorPrimary700</item>
+        <item name="colorAccent">@color/colorAccent400</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+    <!-- Launch activities subtheme -->
+    <style name="AppTheme.NoBar.Launch">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/colorPrimary500</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorControlNormal">@color/white75</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/white75</item>
+    </style>
+
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/colorPrimary700</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.Button.Facebook">
+        <item name="colorButtonNormal">@color/facebook</item>
+    </style>
+
+    <style name="AppTheme.Button.Twitter">
+        <item name="colorButtonNormal">@color/twitter</item>
+    </style>
+
+    <style name="AppTheme.Button.Google">
+        <item name="colorButtonNormal">@color/google</item>
+    </style>
+
+
+
+
+</resources>

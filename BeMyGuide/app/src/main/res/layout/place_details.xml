@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.thomas.test2.ScrollingActivity"
+    tools:showIn="@layout/activity_place">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- RATING & DISTANCE -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <RatingBar
+                android:id="@+id/rating_bar"
+                android:layout_width="wrap_content"
+                style="@android:style/Widget.Holo.Light.RatingBar.Small"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4.5"
+                android:stepSize="0.1"
+                android:layout_centerVertical="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/rating_bar"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorPrimaryText"
+                android:text="4,7"/>
+
+            <TextView
+                android:id="@+id/distance_place"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1,2 km"
+                android:textColor="@color/colorPrimaryText"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/distance_place"
+                android:layout_centerVertical="true"
+                android:src="@drawable/place"/>
+
+        </RelativeLayout>
+
+        <!-- ADDRESS -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/address_icon"
+                android:src="@drawable/address_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@id/address_icon"
+                android:layout_alignWithParentIfMissing="true">
+
+                <TextView
+                    android:id="@+id/address_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="21, Impasse de Camille"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorPrimaryText"/>
+
+                <TextView
+                    android:id="@+id/address_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="@color/colorSecondaryText" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- SEPARATOR -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp"
+            android:background="?android:attr/listDivider"/>
+
+        <!-- PHONE -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/phone_icon"
+                android:src="@drawable/phone_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/phone_icon"
+                android:layout_alignWithParentIfMissing="true">
+
+                <TextView
+                    android:id="@+id/phone_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="06.34.54.65.21"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@color/colorPrimaryText"/>
+
+                <TextView
+                    android:id="@+id/phone_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="@color/colorSecondaryText" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- SEPARATOR -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp"
+            android:background="?android:attr/listDivider"/>
+
+        <!-- OPENING -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/opening_icon"
+                android:src="@drawable/opening_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+
+                <TextView
+                    android:id="@+id/opening_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Ouvert"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_toRightOf="@+id/opening_icon"/>
+        </RelativeLayout>
+
+        <!-- SEPARATOR -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="70dp"
+            android:background="?android:attr/listDivider"/>
+
+        <!-- DESCRIPTION -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="70dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:clickable="true"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/description_icon"
+                android:src="@drawable/description_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:id="@+id/description_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tortor mauris, mattis quis est vel, lacinia semper felis. Nunc et fermentum purus. Vestibulum eget porttitor quam. Donec tincidunt leo ac lorem elementum, suscipit viverra nunc auctor. Pellentesque vestibulum sem id enim pharetra, et rutrum diam placerat. Aliquam et dolor lectus."
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/description_icon"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

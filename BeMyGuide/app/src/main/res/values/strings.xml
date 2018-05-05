@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">BeMyGuide</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_firstName">First Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_second">Retype password</string>
+    <string name="err_msg_username">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter a valid password</string>
+    <string name="signup_button">Submit</string>
+    <string name="signin_button">Login</string>
+    <string name="facebook_button">Connect with Facebook</string>
+    <string name="twitter_button">Connect with Twitter</string>
+    <string name="google_button">Connect with Google+</string>
+    <string name="signup_link">No account yet? Create one</string>
+    <!-- MAPS API KEY -->
+    <string name="google_maps_key">AIzaSyAxiucNuQiesV34eAZEtNCCGb5TKipRv7g</string>
+
+    <!-- user -->
+    <string name="user_email">eMail</string>
+    <string name="user_Name">name</string>
+    <string name="user_firstName">firstName</string>
+    <string name="user_code">code</string>
+    <string name="user_token">token</string>
+    <string name="user_refreshToken">refreshToken</string>
+    <string name="user_urlImage">urlImage</string>
+    <string name="user_password">password</string>
+    <string name="user_urlAddUser">https://192.168.43.184:8889/api/addUser/</string>
+    <string name="user_modeAppli">appli</string>
+    <string name="user_connectionMode">connectionMode</string>
+    <string name="user">user</string>
+    <string name="user_urlAuthenticate">https://192.168.43.184:8889/api/authenticate</string>
+
+    <string name="place_categories">Place categories</string>
+    <string name="radius_search">Search Radius</string>
+    <string name="search_button">Search</string>
+
+    <string name="place_results">Results : 14 places found</string>
+
+    <!-- pointsofinterests -->
+    <string name="points_urlGet">https://192.168.43.184:8889/api/pointsofinterests</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary300">#4FC3F7</color>
+    <color name="colorPrimary500">#03A9F4</color>
+    <color name="colorPrimary700">#0288D1</color>
+    <color name="colorAccent400">#1DE9B6</color>
+    <color name="colorPrimaryText">#87000000</color>
+    <color name="colorSecondaryText">#54000000</color>
+    <color name="colorSubtitles">#fff3f3f3</color>
+    <color name="colorIcons">#38000000</color>
+    <color name="colorDividers">#12000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white75">#75FFFFFF</color>
+    <color name="facebook">#507CC0</color>
+    <color name="twitter">#64CCF1</color>
+    <color name="google">#DF4930</color>
+
+</resources>

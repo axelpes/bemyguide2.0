@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- SUBTITLE 1 -->
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:text="@string/place_categories"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:background="@color/colorSubtitles"
+        android:gravity="center_vertical"/>
+
+    <!-- LIST -->
+    <ListView android:id="@+id/placecategories_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="outsideOverlay"
+        android:background="@color/white"
+        android:choiceMode="multipleChoice" />
+
+    <!-- SUBTITLE 2 -->
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/radius_text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="16dp"
+        android:text="@string/radius_search"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:background="@color/colorSubtitles"
+        android:gravity="center_vertical"/>
+
+    <!-- RADIUS SEEKBAR -->
+    <android.support.v7.widget.AppCompatSeekBar
+        android:id="@+id/radius_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        android:max="50" />
+
+    <!-- SEARCH BUTTON -->
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:theme="@style/AppTheme.Button"
+        android:text="@string/search_button"/>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thomas.projet_signup">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+            <!-- Signin -->
+            <activity
+                android:name=".com.example.thomas.controller.SigninActivity"
+                android:label="Signin"
+                android:theme="@style/AppTheme.NoBar.Launch">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+
+            <!-- Map -->
+            <activity
+                android:name=".com.example.thomas.controller.MapActivity"
+                android:label="Search"
+                android:theme="@style/AppTheme.Bar"
+                android:parentActivityName=".com.example.thomas.controller.HomeActivity"></activity>
+
+            <!-- Details Place -->
+            <activity
+                android:name=".com.example.thomas.controller.PlaceActivity"
+                android:theme="@style/AppTheme.NoBar"
+                android:parentActivityName=".com.example.thomas.controller.MapActivity"></activity>
+
+            <!-- Signup -->
+            <activity
+                android:name=".com.example.thomas.controller.SignupActivity"
+                android:theme="@style/AppTheme.NoBar.Launch"></activity>
+
+            <!-- Search -->
+            <activity
+                android:name=".com.example.thomas.controller.HomeActivity"
+                android:theme="@style/AppTheme.Bar"
+                android:parentActivityName=".com.example.thomas.controller.HomeActivity"></activity>
+    </application>
+
+</manifest>
